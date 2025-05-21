@@ -1,0 +1,21 @@
+# Python virtual environments
+venv/
+.env/
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Mac system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Log and coverage files
+*.log
+coverage/
+htmlcov/
