@@ -18,8 +18,12 @@ def count_words(text):
     words = text.split()
     word_count_dict = {}
 
+    stopwords = ["—", "a", "an", "and", "the", "of", "in", "on", "for", "to", "with", "by", "at", "is", "it", "this", "that", "be", "as", "from"]
+
     for word in words:
-        if word in word_count_dict:
+        if word in stopwords:
+            continue
+        elif word in word_count_dict:
             word_count_dict[word] += 1
         else:
             word_count_dict[word] = 1
