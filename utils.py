@@ -23,10 +23,8 @@ def count_words(text):
     for word in words:
         if word in stopwords:
             continue
-        elif word in word_count_dict:
-            word_count_dict[word] += 1
         else:
-            word_count_dict[word] = 1
+            word_count_dict[word] = word_count_dict.get(word, 0) + 1
 
     return word_count_dict
 
