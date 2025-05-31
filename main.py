@@ -2,7 +2,7 @@ from utils import read_file, clean_text, count_words, top_ten_words
 
 
 def main():
-    filepath = './samples.txt'
+    filepath = './sample.txt'
 
     text = read_file(filepath)
 
