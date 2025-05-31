@@ -2,9 +2,15 @@ from string import punctuation
 
 
 def read_file(filepath):
-    with open(filepath, 'r') as f:
-        file_contents = f.read()
+    try:
+        with open(filepath, 'r') as f:
+            file_contents = f.read()
 
+    except IOError as error:
+        print('An error occurred, check file path and file name.')
+        print(error)
+
+    else:
         return file_contents
 
 
